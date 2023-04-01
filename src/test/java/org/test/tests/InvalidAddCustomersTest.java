@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -11,6 +12,8 @@ import org.test.ChooseTabs;
 import org.test.Registration;
 
 import java.util.concurrent.TimeUnit;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class InvalidAddCustomersTest {
 
@@ -37,6 +40,9 @@ public class InvalidAddCustomersTest {
         chooseTabs.clickAddCustomers();
         Registration registration = new Registration(driver);
         registration.inputRightRegistration("Ekaterina", "Иванова", "123456");
+        String expected = "Введите имя на русском языке";
+        String actual = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
+        assertEquals(expected, actual);
     }
 
     @Test
