@@ -17,7 +17,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SearchCustomersTest {
 
-
     private WebDriver driver;
 
     @BeforeAll

@@ -5,7 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ChooseTabs {
+
     private static String PAGE_URL = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager";
+
     public WebDriver driver;
 
     @FindBy(css = "[ng-class='btnClass1']")
