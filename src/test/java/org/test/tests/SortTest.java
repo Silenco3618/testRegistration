@@ -19,7 +19,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SortTest {
-
     private WebDriver driver;
 
     @BeforeAll

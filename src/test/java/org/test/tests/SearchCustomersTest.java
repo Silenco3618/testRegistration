@@ -55,6 +55,7 @@ public class SearchCustomersTest {
         String actual = driver.findElement(By.xpath("//td[@class='ng-binding'][2]")).getText().trim();
         assertEquals(expected, actual);
     }
+
     @Test
     public void successSearchPostCode() {
         ChooseTabs chooseTabs = new ChooseTabs(driver);
