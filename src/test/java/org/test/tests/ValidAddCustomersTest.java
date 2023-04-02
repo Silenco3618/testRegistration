@@ -49,8 +49,6 @@ public class ValidAddCustomersTest {
        // String actual = driver.findElement(By.linkText("Екатерина")).getText().trim();
        // assertEquals(expected, actual);
         //assertTrue((BooleanSupplier) driver.findElement(By.linkText("Customer added successfully with customer id :6")));
-
-
         //String expected = "Customer added successfully with customer id :6";
         //String actual = driver.findElement(By.xpath("//div[@ui-view class='ng-scope']::after")).getText().trim();
         //assertEquals(expected, actual);

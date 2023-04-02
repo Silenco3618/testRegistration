@@ -10,6 +10,7 @@ public class ChooseTabs {
     @FindBy(css = "[ng-class='btnClass1']")
     private WebElement signInButtonAddCustomer;
     //xpath = "//button[@ng-class='btnClass1']"
+
     @FindBy(css = "[ng-class='btnClass3']")
     private WebElement signInButtonCustomers;
 

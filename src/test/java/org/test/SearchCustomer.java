@@ -22,10 +22,6 @@ public class SearchCustomer {
     }
 
 
-
-
-
-
     @FindBy(xpath = "//a[@ng-click='sortType = 'lName'; sortReverse = !sortReverse']")
     private WebElement pressLastName;
 

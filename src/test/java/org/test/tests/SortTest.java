@@ -37,7 +37,6 @@ public class SortTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-
     @Test
     public void sortStraightBack() {
         ChooseTabs chooseTabs = new ChooseTabs(driver);
